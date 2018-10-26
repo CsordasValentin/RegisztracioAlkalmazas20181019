@@ -16,6 +16,7 @@ namespace RegisztracioAlkalmazas20181019
         public Form1()
         {
             InitializeComponent();
+            
         }
 
         private void Mentes()
@@ -41,5 +42,11 @@ namespace RegisztracioAlkalmazas20181019
             }
         }
 
+        private void addNewHobbieButton_Click(object sender, EventArgs e)
+        {
+            List<string> hobbieList = new List<string>();
+            hobbieList.Add(addNewHobbieTextBox.Text);
+            hobbiesListBox.DataSource = hobbieList;
+        }
     }
 }

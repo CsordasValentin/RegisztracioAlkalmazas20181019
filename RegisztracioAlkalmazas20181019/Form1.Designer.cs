@@ -73,8 +73,9 @@
             this.addNewHobbieButton.Name = "addNewHobbieButton";
             this.addNewHobbieButton.Size = new System.Drawing.Size(75, 23);
             this.addNewHobbieButton.TabIndex = 4;
-            this.addNewHobbieButton.Text = "Hozzád";
+            this.addNewHobbieButton.Text = "Hozzáad";
             this.addNewHobbieButton.UseVisualStyleBackColor = true;
+            this.addNewHobbieButton.Click += new System.EventHandler(this.addNewHobbieButton_Click);
             // 
             // saveButton
             // 
@@ -164,6 +165,10 @@
             // hobbiesListBox
             // 
             this.hobbiesListBox.FormattingEnabled = true;
+            this.hobbiesListBox.Items.AddRange(new object[] {
+            "Úszás",
+            "Horgászat",
+            "Futás"});
             this.hobbiesListBox.Location = new System.Drawing.Point(268, 32);
             this.hobbiesListBox.Name = "hobbiesListBox";
             this.hobbiesListBox.Size = new System.Drawing.Size(120, 95);
